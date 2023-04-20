@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <h1>FORMS</h1>
+    <form action="data.html" method="get" id="f1">
+        <h4>
+         <label for="firstname">FirstName:</label>
+          <input type="text" id="firstname" name="FirstName"><br>
+        </h4>
+        <h4>
+         <label for="lastname">LastName:</label> 
+          <input type="text" id="'lastname" name="LastName"><br>
+        </h4>
+        <h4>
+          <label for="emailid">Email Address:</label> 
+          <input type="email" id="'emailid" placeholder="example.@gmail.com"   name="email" required ><br>
+        </h4> 
+        <h4>
+         <label for="password">PassWord:</label>
+          <input type="password" id="password" name="Password"><br>
+        </h4>
+        <h4>Language</h4><!--Radio button having same name value to select one from many-->
+        <input type="radio" id="react" name="fav_lang" value="V1">
+        <label for="react">React</label><br>
+        <input type="radio" id="angular" value="V2" name="fav_lang">
+        <label for="angular">Angular</label><br>
+        <input type="radio" id="Javascript" value="V3" name="fav_lang">
+        <label for="js">Javascript</label><br>
+        
+        <h4>Course</h4><!--checkbox having unique name value-->
+        <input type="checkbox" id="id1" name="m1" value="mern">
+        <label for="id1">MERN</label><br>
+        <input type="checkbox" id="id2" name="m2" value="mean">
+        <label for="id2">MEAN</label><br>
+        <input type="checkbox" id="id3" name="m3" value="mevn">
+        <label for="id1">MEVN</label><br>
+
+        <h4>
+            <label for="field">Select field:</label><br>
+            <select id="field" name="field">
+              <option value="f1">Front End</option>
+              <option value="f2">Back End</option>
+              <option value="f3">Full Stack</option>
+            </select><br>
+
+           <label for="detail"></label><br>
+          <textarea name="add" id="detail" rows="7" cols="20"></textarea><br>
+        </h4>
+
+        <h4>
+          <label for="number">Enter your Phone Number:</label><br>
+          <input type="tel" id="number" pattern="[0-9]{10}"></input>
+        </h4>
+        <input type="submit" value="Submit" id="f1">
+    </form>
+    <h1>TABLES</h1>
+      <a href="/index.html">Click Here</a>
+
+    </head>
+</html>
