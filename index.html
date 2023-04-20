@@ -1,125 +1,60 @@
 <!DOCTYPE html>
-<html>
-    <head>   
-        <title>Document</title>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE-edge">
-        <meta name="viewport" content="width=device-width,intial-scale=1.0">
-        <style> 
-            table ,td,th
-            {
-            
-                border:1px solid black ;
-                padding: 1px solid black;
-            }
-        </style>
+<html lang="en">
+    <head>
+        <h1>FORMS</h1>
+    <form action="data.html" method="get" id="f1">
+        <h4>
+         <label for="firstname">FirstName:</label>
+          <input type="text" id="firstname" name="FirstName"><br>
+        </h4>
+        <h4>
+         <label for="lastname">LastName:</label> 
+          <input type="text" id="'lastname" name="LastName"><br>
+        </h4>
+        <h4>
+          <label for="emailid">Email Address:</label> 
+          <input type="email" id="'emailid" placeholder="example.@gmail.com"   name="email" required ><br>
+        </h4> 
+        <h4>
+         <label for="password">PassWord:</label>
+          <input type="password" id="password" name="Password"><br>
+        </h4>
+        <h4>Language</h4><!--Radio button having same name value to select one from many-->
+        <input type="radio" id="react" name="fav_lang" value="V1">
+        <label for="react">React</label><br>
+        <input type="radio" id="angular" value="V2" name="fav_lang">
+        <label for="angular">Angular</label><br>
+        <input type="radio" id="Javascript" value="V3" name="fav_lang">
+        <label for="js">Javascript</label><br>
+        
+        <h4>Course</h4><!--checkbox having unique name value-->
+        <input type="checkbox" id="id1" name="m1" value="mern">
+        <label for="id1">MERN</label><br>
+        <input type="checkbox" id="id2" name="m2" value="mean">
+        <label for="id2">MEAN</label><br>
+        <input type="checkbox" id="id3" name="m3" value="mevn">
+        <label for="id1">MEVN</label><br>
+
+        <h4>
+            <label for="field">Select field:</label><br>
+            <select id="field" name="field">
+              <option value="f1">Front End</option>
+              <option value="f2">Back End</option>
+              <option value="f3">Full Stack</option>
+            </select><br>
+
+           <label for="detail"></label><br>
+          <textarea name="add" id="detail" rows="7" cols="20"></textarea><br>
+        </h4>
+
+        <h4>
+          <label for="number">Enter your Phone Number:</label><br>
+          <input type="tel" id="number" pattern="[0-9]{10}"></input>
+        </h4>
+        <input type="submit" value="Submit" id="f1">
+    </form>
+    <h1>TABLES</h1>
+      <a href="/table.html">Click Here</a>
+
     </head>
-    <body>
-        <form>
-            <table width="100%">
-                <tr text-align="centre" >
-                <th>Firstname</th>
-                <th>Lastname</th>
-                <th>Age</th>
-                <th>Phone number</th>
-                <th>Pincode</th>
-                </tr>
-                <tr text-align="left">
-                    <td>User First 1</td>
-                    <td>User Last 1</td>
-                    <td>24</td>
-                    <td>1234567890</td>
-                    <td>56789</td>
-                </tr>
-                <tr>
-                    <td>User First 2</td>
-                    <td>User Last 2</td>
-                    <td>24</td>
-                    <td></td>
-                    <td>56789</td>
-                </tr>
-                <tr>
-                    <td>User First 3</td>
-                    <td>User Last 3</td>
-                    <td>24</td>
-                    <td>1234567890</td>
-                    <td></td>
-                </tr>
-
-            </table>
-            <br>
-            <br>
-            <!--Rowspan:mergring of rows-->
-            <table width="100%">
-                <tr>
-                    <th>Course:</th>
-                    <td>Elevation Academy</td>
-                </tr>
-                <tr>
-                    <th rowspan="2">Contact Number:</th>
-                    <td>1234567890</td>
-                </tr>
-                <tr>
-                    
-                    <td>1234567890</td>
-                </tr>
-            </table>
-            <br>
-            <br>
-            <!--colspan:Merging of coloumn-->
-            <table width="100%">
-                <tr>
-                    <th>Course</th>
-                    <th colspan="2">Contact Number</th>
-                    <th>Date of Commencement</th>
-                </tr>
-                <tr>
-                    <td>Elevation Academy</td>
-                    <td>1234567890</td>
-                    <td>2 August 2020</td>
-                    
-                </tr>
-                <tr>
-                    <td>Elevation Academy</td>
-                    <td>1234567890</td>
-                    <td>2 August 2020</td>
-                    
-                </tr>
-                <tr>
-                    <td>Elevation Academy</td>
-                    <td>1234567890</td>
-                    <td>2 August 2020</td>
-                    
-                </tr>
-            </table>
-            <br>
-            <table  align="center" width="15%" >
-                <tr>
-                    <th style="background-color: rgba(169, 169, 169, 0.358);">Name</th>
-                    <td>John</td>
-                    <td style="background-color: rgba(169, 169, 169, 0.358)">Nick</td>
-                    <td>Tim</td>
-                </tr>
-                <tr>
-                    <td>Age</td>
-                    <td style="background-color: rgba(169, 169, 169, 0.358);">30</td>
-                    <td>20</td>
-                    <td style="background-color: rgba(169, 169, 169, 0.358);">35</td>
-                </tr>
-
-            </table>
-            <u style="color: mediumblue;">
-            <a href="./form.html">Go back</a>
-            </u>
-
-
-
-
-
-
-
-
-
-        </form>
-    </body>
 </html>
